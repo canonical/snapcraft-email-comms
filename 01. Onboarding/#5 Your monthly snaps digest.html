@@ -11,8 +11,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Responsive Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,700" rel="stylesheet" />
-    <title>Snapcraft.io –&nbsp;See how your audience grows</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,300,400,500,700" rel="stylesheet" />
+    <title>Snapcraft.io –&nbsp;Your monthly snaps digest</title>
     <!-- Responsive Styles and Valid Styles -->
     <style type="text/css">
 
@@ -42,8 +42,9 @@
 			margin-bottom:0;
 			padding-top:0;
 			padding-bottom:0;
-  }
-  ul { margin: 0; }
+    }
+
+    ul { margin: 0; }
 
 	[style*="Ubuntu"] {font-family: Ubuntu, Sans Serif, Arial, Helvetica !important;}
 
@@ -61,6 +62,55 @@
 	.banner {
 		height:237px;
 	}
+
+  .u-align--right {
+    text-align: right;
+  }
+
+  .snapTable th {
+    border-bottom: 1px solid #111;
+    padding-bottom: .4375rem;
+  }
+
+  .snapTable th, h5 {
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    font-size: 14px;
+
+    line-height: 20px;
+    font-weight: 300;
+    vertical-align: top;
+  }
+
+  .snapTable tbody td {
+    padding-top:.4375rem;
+    padding-bottom: .5rem;
+  }
+
+  .revision {
+    font-size: 14px;
+    color: #9B9B9B;
+  }
+
+  .value {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 31px;
+  }
+  td span {
+    width: 100%;
+    float: left;
+  }
+
+  .value-up { color: #82BEA0;}
+
+  .value-down { color: #F5A623; }
 
     /* ----------- responsivity ----------- */
     @media only screen and (max-width: 640px){
@@ -115,37 +165,87 @@
 
 		}
 
-
-
 	</style>
   </head>
   <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#82BEA0">
     <table border="0" width="100%" cellpadding="0" cellspacing="0" style="background-color: #82BEA0">
       <tbody>
-        <tr>
           <td align="center" class="Zwidth" style="min-width:800px;">
             <div class="mktEditable" id="First_Pragraph" mktoname="First_Pragraph">
               <table align="center" width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 800px;" class="Table800">
                 <tbody>
                   <tr>
-                    <td align="center" style="padding: 72px 20px 0px 20px;">
+                    <td align="center" style="padding: 54px 20px 0px 20px;">
                       <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 740px;" class="Table740">
                         <tbody>
+                            <tr>
+                                <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 28px; line-height: 31px; font-weight: 300; font-style: normal; padding: 0 0 60px 0;"><a href="https://www.snapcraft.io" target="_blank"> <img src="https://assets.ubuntu.com/v1/c0b82139-snapcraft-email-logo.png" border="0" width="191" style="display:block;" alt="Snapcraft.io" /> </a> </td>
+                            </tr>
                           <tr>
-                              <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 28px; line-height: 31px; font-weight: 300; font-style: normal; padding: 0 0 60px 0;"><a href="https://www.snapcraft.io" target="_blank"> <img src="https://assets.ubuntu.com/v1/c8d2903f-snapcraft-logo-email.svg" border="0" style="display:block;" alt="Snapcraft.io" /> </a> </td>
+                            <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 28px; line-height: 31px; font-weight: 300; font-style: normal;">Your month in snaps<br /></td>
                           </tr>
                           <tr>
-                            <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 28px; line-height: 31px; font-weight: 300; font-style: normal;">See how your audience grows</td>
+                            <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 45px 0 20px 0;"> <p>Hello! Some text about what you're about to see.</p> </td>
                           </tr>
                           <tr>
-                            <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 24px 0 8px 0;">Check out how your audience is growing on your Snap Store <a href="https://snapcraft.io/{{my.firstStableSnapNameWithoutDetails}}/metrics" target="_blank">Metrics</a> page.</td>
-                          </tr>
+                              <td align="left" style="color: #0e0e0e; font-family: Arial, 'Sans Serif', Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 0px 0px 20px; text-align: left;"> <p>{{my.channelMapWithMetrics}}</p> </td>
+                            </tr>
                           <tr>
-                              <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 60px 0 8px 0;"><img src="https://assets.ubuntu.com/v1/b5090bd1-metrics.png" alt="heck out how your audience is growing on your Snap Store Metrics page"  border="0" width="740" style="display:block;" /></td>
-                          </tr>
+                              <td align="left" style="color: #0e0e0e; font-family: Arial, 'Sans Serif', Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 36px 0px 20px; text-align: left;">
+                                  <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="" class="snapTable">
+                                    <td width="14%">
+                                      <img src="https://dashboard.snapcraft.io/site_media/appmedia/2017/10/wire-desktop.png" width="80"/>
+                                    </td>
+                                    <td width="40%" style="padding-right:1rem;"><h3>This is a snap with a display title in 2 lines</h3></td>
+                                    <td width="20%"><h5 class="u-align--right">Total Installs</h5><span class="value u-align--right">12470</span></td>
+                                    <td width="26%"><h5 class="u-align--right">Weekly Active Devices</h5><span class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td></td>
+                                  </table>
+                              </td>
+                            </tr>
                           <tr>
-                              <td align="left" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 24px 0 8px 0;">Here, you’ll find the number of weekly active devices for different time periods, with breakdowns by channel, territory, and version, as well as where journey is being installed in the world.</td>
+                            <td align="left" style="color: #0e0e0e; font-family: Arial, 'Sans Serif', Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; padding: 0px 0px 20px; text-align: left;">
+                                <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="" class="snapTable">
+                                    <thead>
+                                      <tr role="row">
+                                        <th scope="col" role="columnheader" width="30%" id="t-channel">Channel</th>
+                                        <th scope="col" role="columnheader" id="t-version">Version</th>
+                                        <th scope="col" role="columnheader" class="u-align--right" width="26%" id="t-weekly-devices">Weekly Active Devices</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr role="row" data-index="0">
+                                          <td role="rowheader" valign="top">latest/stable</td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(i386, armvhf, pp64l)</span></td>
+                                          <td role="gridcell" class="value value-down u-align--right">4 <img src="https://assets.ubuntu.com/v1/bffce855-metric-down.png" /></td>
+                                        </tr><tr role="row" data-index="1">
+                                          <td role="rowheader"></td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(i386, armvhf, pp64l)</span></td>
+                                          <td role="gridcell" class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td>
+                                      </tr>
+                                      <tr role="row" data-index="1">
+                                          <td role="rowheader" valign="top">latest/candidate</td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(i386, armvhf, pp64l)</span></td>
+                                          <td role="gridcell" class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td>
+                                        </tr><tr role="row" data-index="1">
+                                          <td role="rowheader"></td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(i386, armvhf, pp64l)</span></td>
+                                          <td role="gridcell" class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td>
+                                      </tr>
+                                      <tr role="row" data-index="2">
+                                          <td role="rowheader" valign="top">latest/beta</td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(all)</span></td>
+                                          <td role="gridcell" class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td>
+                                      </tr>
+                                      <tr role="row" data-index="3">
+                                          <td role="rowheader" valign="top">latest/edge</td>
+                                          <td role="gridcell" class="">1.3.4242-dagas<br/><span class="revision">(i386, armvhf, pp64l)</span></td>
+                                          <td role="gridcell" class="value value-up u-align--right">3 <img src="https://assets.ubuntu.com/v1/24fb4f8d-metric-up.png" /></td>
+                                        </tr>
+                                    </tbody>
+                                  </table>
+                            </td>
                           </tr>
+
                         </tbody>
                       </table> </td>
                   </tr>
@@ -158,14 +258,14 @@
       </tbody>
     </table>
     <div class="mktEditable" id="Second_Paragraph" mktoname="Second_Pragraph" style="background-color: #82BEA0">
-      <table align="center" width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 800px;" class="Table800">
+      <table align="center" width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:800px;" class="Table800">
         <tbody>
           <tr>
-            <td align="center" style="padding: 8px 20px 72px 20px;">
-              <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 740px;" class="Table740">
+            <td align="center" style="padding:20px 20px 54px 20px;">
+              <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:740px;" class="Table740">
                 <tbody>
                   <tr>
-                    <td align="left" class="PaddT25" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal;">Have a question? Ask the experts at the <a href="https://forum.snapcraft.io" target="_blank">Snapcraft Forum.</a><br /><br /> Happy snapping! <br />The Snapcraft team</td>
+                    <td align="left" class="PaddT25" style="color:#0E0E0E; font-family: Arial, Sans Serif, Ubuntu; font-size:16px; line-height:24px; font-weight:300; font-style:normal;"> We’re here to help. Ask your questions at the <a href="https://forum.snapcraft.io" target="_blank">Snapcraft Forum.</a><br /><br /> Happy snapping! <br /><br /> The Snapcraft team </td>
                   </tr>
                 </tbody>
               </table> </td>
