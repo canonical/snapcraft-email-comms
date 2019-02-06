@@ -11,7 +11,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- Responsive Meta Tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,200,300,400,500,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:100,300,400,500,700" rel="stylesheet" />
     <title>Snapcraft.io –&nbsp;Share your thoughts with the Snapcraft developers</title>
     <!-- Responsive Styles and Valid Styles -->
     <style type="text/css">
@@ -42,8 +42,26 @@
 			margin-bottom:0;
 			padding-top:0;
 			padding-bottom:0;
-  }
-  ul { margin: 0; }
+    }
+
+    ul { margin: 0; }
+
+	[style*="Ubuntu"] {font-family: Ubuntu, Sans Serif, Arial, Helvetica !important;}
+
+    span.Preheader{display: none; font-size: 1px;}
+
+    html{
+      width: 100%;
+    }
+
+	.ZedFix {
+	 display:none;
+	 display:none!important;
+	}
+
+	.banner {
+		height:237px;
+	}
 
 
 .p-button {
@@ -58,8 +76,6 @@
   .p-button:disabled:active, .p-button:disabled:hover, .is--disabled.p-button:active, .is--disabled.p-button:hover {
     background-color: #fff;
     border-color: #fff; }
-  .p-button .p-link--external {
-    color: currentColor; }
 
 .p-button {
   transition-duration: 0.165s;
@@ -95,36 +111,6 @@
 
   @media only screen and (max-width: 460px) {
     .p-button + button { margin-top: 1.1rem; } }
-
-  .nps-list {
-    list-style-type: none;
-    width:100%;
-    max-width: 740px;
-    float: left;
-    background: red;
-  }
-
-  .nps-list li {
-    float: left;
-    margin-left: 2%;
-  }
-
-	[style*="Ubuntu"] {font-family: Ubuntu, Sans Serif, Arial, Helvetica !important;}
-
-    span.Preheader{display: none; font-size: 1px;}
-
-    html{
-      width: 100%;
-    }
-
-	.ZedFix {
-	 display:none;
-	 display:none!important;
-	}
-
-	.banner {
-		height:237px;
-	}
 
     /* ----------- responsivity ----------- */
     @media only screen and (max-width: 640px){
@@ -212,35 +198,40 @@
                           </tr>
                           <tr>
                             <td align="left">
-                                <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:740px; margin-top:2%;" class="Table740">
-                                    <tbody>
-                                    <tr>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=0" target="_blank" >0</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=1" target="_blank" >1</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=2" target="_blank" >2</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=3" target="_blank" >3</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=4" target="_blank" >4</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=5" target="_blank" >5</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=6" target="_blank" >6</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=7" target="_blank" >7</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=8" target="_blank" >8</a></td>
-                                        <td align="center" style="padding: 0;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=9" target="_blank" >9</a></td>
-                                    </tr>
-                                    <tr>
-                                        <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-style: italic; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:740px; margin-top:2%;" class="Table740"><td align="left" >Not likely</td><td align="right" >Very likely</td></table>
-                                    </tr>
-                                    </tbody>
-                                    </table>
-                            </td>
+                              <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:740px; margin-top:2%;" class="Table740">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=0" target="_blank">0</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=1" target="_blank">1</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=2" target="_blank">2</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=3" target="_blank">3</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=4" target="_blank">4</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=5" target="_blank">5</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=6" target="_blank">6</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=7" target="_blank">7</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=8" target="_blank">8</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=9" target="_blank">9</a></td>
+                                    <td align="center" style="padding: 0; width: 9%;"><a class="p-button" href="https://snapcraft.io?nps=true&amp;score=10" target="_blank">10</a></td>
+                                  </tr>
+                                  <tr>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-style: italic; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal; border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:740px; margin-top:2%;" class="Table740">
+                                <tbody>
+                                  <tr>
+                                    <td align="left">Not likely</td>
+                                    <td align="right">Very likely</td>
+                                  </tr>
+                                </tbody>
+                              </table> </td>
                           </tr>
                         </tbody>
                       </table> </td>
                   </tr>
                 </tbody>
               </table>
-            </div> </td>
-        </tr>
-        <tr>
+            </div></td>
         </tr>
       </tbody>
     </table>
@@ -248,11 +239,11 @@
       <table align="center" width="800" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 800px;" class="Table800">
         <tbody>
           <tr>
-            <td align="center" style="padding: 20px 20px 72px 20px;">
+            <td align="center" style="padding: 20px 20px 54px 20px;">
               <table align="center" width="740" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 740px;" class="Table740">
                 <tbody>
                   <tr>
-                    <td align="left" class="PaddT25" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal;">Thank you, <br />The Snapcraft team</td>
+                    <td align="left" class="PaddT25" style="color: #0e0e0e; font-family: Arial, Sans Serif, Ubuntu; font-size: 16px; line-height: 24px; font-weight: 300; font-style: normal;">Thank you,<br /> The Snapcraft team</td>
                   </tr>
                 </tbody>
               </table> </td>
